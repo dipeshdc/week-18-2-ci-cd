@@ -35,7 +35,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          script: 
+          script: | 
             sudo docker pull dipeshdc/week-18-class:latest
             sudo docker stop web-app || true
             sudo docker rm web-app || true
